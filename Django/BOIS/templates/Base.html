@@ -6,21 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     {% block styler %}
-        
+        <link rel="stylesheet" href="{% static 'css/style_Home.css' %}">  
     {% endblock %}
 
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/slick.css' %}">
     <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
     <title>{{ title }}</title>
   </head>
-  <body>
+  <bod
 
-  <section class="header">
+  <section class="navigator">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark justify-content-start">
+          <div class="d-flex flex-grow-1">
+              <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+              <a class="navbar-brand" href="#"> BOIS </a>
+              <div class="w-100 text-right">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="navbar-collapse collapse w-100" id="collapsingNavBar">
+              <ul class="navbar-nav w-100 justify-content-center">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'home' %}">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+          </div>
+
+          <div class="navbar-collapse collapse w-100 justify-content-md-end" id="collapsing navbar">
+              <ul class="navbar-nav ml-auto flex-nowrap">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link"> Sign Up </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link"> Log In </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
     
   </section>
 
