@@ -5,3 +5,9 @@ def home(request):
     template = "Home.html"
 
     return render(request,template,{'title':title})
+
+def index(request):
+    title = "Index"
+    template = "index.html"
+
+    return render(request,template,{'title':title})
