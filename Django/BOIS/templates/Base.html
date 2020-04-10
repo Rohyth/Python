@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     {% block styler %}
-        <link rel="stylesheet" href="{% static 'css/style_Home.css' %}">
+        
     {% endblock %}
 
 
@@ -16,11 +16,18 @@
     <link rel="stylesheet" href="{% static 'css/slick.css' %}">
     <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
 
-    <title>Hello, world!</title>
+    <title>{{ title }}</title>
   </head>
   <body>
 
-    <h1>{{ title }}</h1>
+  <section class="header">
+    
+  </section>
+
+
+    {% block content %}
+
+    {% endblock %}
 
     
     
