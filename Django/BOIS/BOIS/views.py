@@ -11,3 +11,9 @@ def index(request):
     template = "index.html"
 
     return render(request,template,{'title':title})
+
+def country(request):
+    title = "country"
+    template = "Country.html"
+
+    return render(request,template,{'title':title})
