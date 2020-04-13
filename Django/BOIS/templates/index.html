@@ -34,6 +34,7 @@
 
 <body>
 
+{% block mainhead %}
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
     <div class="container d-flex align-items-center">
@@ -80,7 +81,10 @@
     </div>
   </header><!-- End Header -->
 
+{% endblock %}
   <!-- ======= Hero Section ======= -->
+
+{% block Slickhead %}
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
@@ -134,6 +138,8 @@
       <path id="wave2" d="" />
     </svg>
   </div>
+
+{% endblock %}
 
   <main id="main">
 
