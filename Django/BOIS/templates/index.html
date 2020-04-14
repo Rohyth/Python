@@ -144,6 +144,7 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
+    {% block About %}
     <section id="about" class="about">
       <div class="container">
 
@@ -176,6 +177,7 @@
 
       </div>
     </section><!-- End About Section -->
+    
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -310,8 +312,10 @@
 
       </div>
     </section><!-- End Features Section -->
+    {% endblock %}
 
     <!-- ======= Cta Section ======= -->
+    {% block CTA %}
     <section id="cta" class="cta">
       <div class="container">
 
@@ -327,6 +331,8 @@
 
       </div>
     </section><!-- End Cta Section -->
+    {% endblock %}
+
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
