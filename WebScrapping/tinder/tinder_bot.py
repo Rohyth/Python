@@ -2,11 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 
-
-
 chrome_options = webdriver.ChromeOptions(); 
 chrome_options.add_experimental_option("excludeSwitches", ['enable-automation']);
-
 
 class TinderBot():
     def __init__(self):
