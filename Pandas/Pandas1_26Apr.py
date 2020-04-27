@@ -41,3 +41,6 @@ plt.hist(R)
 plt.hist(R, bits=20)
 plt.hist(R, bims=20)
 plt.hist(R, bins=20)
+
+
+
