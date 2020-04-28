@@ -11,7 +11,6 @@ class shineBot():
         self.driver = webdriver.Chrome(options=chrome_options);
         
         
-    
     def login(self):
         self.driver.get("https://recruiter.shine.com/")
         sleep(2)
@@ -44,4 +43,13 @@ class shineBot():
         for opt in xopt:
             print(opt.text)
         
-        
+        """
+import pandas as pd
+
+x = []
+x = pd.DataFrame(columns=['Name','Country','Pincode'])
+x
+i = []
+for i in range(10):
+    x = x.append({'Name':i,'Country':i+1,'Pincode':1000+i}, ignore_index=True)
+    """
