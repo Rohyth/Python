@@ -6,4 +6,9 @@
 
     {% block Head %}
         <h1>{{ title }}</h1>
+        {% for l in myl %}
+            <ul>
+            <li>{{ l }}</li>
+            </ul>
+        {% endfor %}
     {% endblock %}
