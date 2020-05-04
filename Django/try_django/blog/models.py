@@ -5,6 +5,6 @@ from django.db import models
 class BlogPost(models.Model):
     
     title = models.TextField()
-    slug = models.SlugField(null=True)
+    slug = models.SlugField(unique=True,null=False)
     content = models.TextField(null=True,blank=True)
 
