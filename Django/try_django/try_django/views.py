@@ -1,11 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-import pandas as pd
 
 def home_page(request):
     title = "Home"
-    
-    return render(request,"Home.html",{'title':title})
+    myl = [1,2,3,5,6]
+    return render(request,"Home.html",{'title':title,'myl':myl})
     
 
 def about_page(request):
