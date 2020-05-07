@@ -14,4 +14,4 @@ def about_page(request):
 
 def contact_page(request):
     title = "Contact"
-    return render(request,"Contact.html",{'title':title})
+    return render(request,"form.html",{'title':title})
