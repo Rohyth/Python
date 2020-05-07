@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from .forms import ContactForm
+
 def home_page(request):
     #print('Rohyth Says',request.method, request.path,request.user)
     title = "Home"
@@ -14,4 +16,10 @@ def about_page(request):
 
 def contact_page(request):
     title = "Contact"
+    #print(request.POST)
+    form = ContactForm(request.POST or None)
+    
+    if form.is_valid():
+        print(form.cleaned_data)
+    
     return render(request,"form.html",{'title':title})
