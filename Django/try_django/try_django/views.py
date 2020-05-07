@@ -21,5 +21,9 @@ def contact_page(request):
     
     if form.is_valid():
         print(form.cleaned_data)
+        form = ContactForm()
     
-    return render(request,"form.html",{'title':title})
+    context = {
+        'title':title,'form':form
+    }
+    return render(request,"form.html",context)

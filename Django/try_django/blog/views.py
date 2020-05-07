@@ -1,6 +1,7 @@
 from django.shortcuts import render,get_object_or_404
 from .models import BlogPost
 
+from .forms import BlogPostModelForm
 #Get --> Single Object
 #filter -- > Multiple Objecs
 
@@ -21,8 +22,16 @@ def blog_list(request):
 
 def blog_create(request):
     #Using Forms
-    template_name = 'blog/create.html'
-    context = {'form':''}
+    form = BlogPostModelForm(request.POST or None)
+    if form.is_valid():
+        #print(form.cleaned_data)
+        #obj = BlogPost.objects.create(**form.cleaned_data)
+        form.save()
+        form = BlogPostModelForm()
+
+
+    template_name = 'form.html'
+    context = {'form':form}
     return render(request,template_name,context)
 
 #def blog_retrieve(request,slug):
