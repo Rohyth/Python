@@ -6,3 +6,9 @@ Created on Sun May 17 07:31:20 2020
 @author: rohyth
 """
 
+# List,dicts are mutable 
+# Tuples is immutable
+
+
+
+
