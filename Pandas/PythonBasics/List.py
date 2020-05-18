@@ -9,12 +9,15 @@ Created on Wed Apr 29 10:36:30 2020
 # List
 A = []
 A = [1,2,3]
+A.append(5)
+A
 
-
+# use .append to add into list
 Names = ['Rohit','Ravi','Ritu']
-Names.append('Soldi')
+Names.append('Nupur')
 Names
 
+# Use .insert to add data at specific location 
 Names.insert(1, 'Bhanu')
 Names
 
