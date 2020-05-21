@@ -9,10 +9,12 @@ Created on Fri May 22 00:45:43 2020
 
 import datetime
 import pytz
+
 '''
 datetime.date -> Y,M,D
 datetime.time -> H,M,M,MS
 datetime.datetime -> Y,M,S,h,m,s,ms
+
 '''
 
 today = datetime.date.today()
@@ -65,6 +67,7 @@ formatted_Date
 
 
 
+'Another way is to install MAYA using pip for better time/date funcs'
 
 
 
