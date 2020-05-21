@@ -14,7 +14,6 @@ def square():
 for x in range(10):
     square()
     nw.forward(50)
-    square()
     
-sleep(2)
+sleep(5)
 turtle.bye()

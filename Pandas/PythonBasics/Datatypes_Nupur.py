@@ -5,10 +5,10 @@ z = x + y
 z
 print(z)
 
-#int
-#string 
-#float
-#Boolean - true / false
+#int - Numbers
+#string ahvjhsdk
+#float 
+#Boolean - true / false 
 
 
 b = 1223
@@ -28,7 +28,7 @@ x = "asgj2123132"
 
 
 '----------------------------------------'
-str = 'Hello World!'
+str = 'hello there , kjsdjasgdkjasg'
 
 print(str)          # Prints complete string
 print(len(str))
@@ -60,7 +60,6 @@ print(tinytuple * 2)   # Prints list two times
 print(tuple + tinytuple) # Prints concatenated lists
 
 
-
 'Dictionary ----------------------------------'
 dict = {
         "Name":["Rohyth","Nupur","ABC"],
@@ -69,10 +68,12 @@ dict = {
         }
 
 dict
-dict['Name']
+dict['Place']
 #add data to list within dict
 dict['Name'].append('XYZ')
 
+
+dict['Name'].append('Alpha')
 
 
 '--------------------------------------------'
