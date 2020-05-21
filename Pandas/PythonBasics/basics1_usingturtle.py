@@ -9,6 +9,7 @@ def square():
         nw.right(90)
         print(p)
   
+
     
 square()
 
@@ -18,7 +19,7 @@ for x in range(4):
     nw.forward(100)
 '''
 
-sleep(10)
+sleep(5)
 turtle.bye()
 
 '''
