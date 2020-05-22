@@ -28,10 +28,12 @@ with requests.session() as c:
     
     '''
     # Using list Comprehension
+    
     period_name = [d.find(class_='period-name').text for d in data]
     short_desc = [d.find(class_='short-desc').text for d in data]
     temp = [t.find(class_='temp').text for t in data]
-    
+     
+    'Using Pandas for Data storage'
     weather_data = pd.DataFrame({
         'period':period_name,
         'Short-description':short_desc,
