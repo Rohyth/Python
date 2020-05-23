@@ -9,5 +9,5 @@ class BlogPostForm(forms.Form):
 
 class BlogPostModelForm(forms.ModelForm):
     class Meta:
-        model = BlogPost
+        model = BlogPost 
         fields = ['title','slug','content']
