@@ -23,3 +23,6 @@ def delete_todo(request,id):
     #print(id)
     Todo.objects.get(id=id).delete()
     return HttpResponseRedirect("/")
+
+
+# Made this App in like 1 Hour . Kinda Great
