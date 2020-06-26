@@ -8,7 +8,7 @@ chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
 
 class shineBot():
     def __init__(self):
-        self.driver = webdriver.Chrome(options=chrome_options);
+        self.driver = webdriver.Chrome(options=chrome_options,executable_path='/home/rohyth/Python/WebScrapping/shine/chromedriver');
         
         
     def login(self):
