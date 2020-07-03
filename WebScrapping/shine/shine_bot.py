@@ -20,7 +20,7 @@ class shineBot():
             pass
         
         self.driver.find_element_by_xpath('//*[@id="id_myDropdown"]/form/ul/li[1]/input').send_keys('basicsofimmigrationc')
-        self.driver.find_element_by_xpath('//*[@id="id_myDropdown"]/form/ul/li[2]/input').send_keys('Basics#2115')
+        self.driver.find_element_by_xpath('//*[@id="id_myDropdown"]/form/ul/li[2]/input').send_keys('')
         sleep(1)
         self.driver.find_element_by_xpath('//*[@id="id_myDropdown"]/form/ul/li[3]/input').click()
         print('Reached login Page')   

@@ -8,7 +8,7 @@ browser.get('https://recruiter.shine.com/')
 
 login = browser.find_element_by_xpath('//*[@id="loginbutton"]').click()
 usr = browser.find_element_by_xpath('/html/body/div[3]/div[2]/div[1]/div[3]/div[1]/div/div/form/ul/li[1]/input').send_keys('basicsofimmigrationc')
-pwd = browser.find_element_by_xpath('/html/body/div[3]/div[2]/div[1]/div[3]/div[1]/div/div/form/ul/li[2]/input').send_keys('Basics#2115')
+pwd = browser.find_element_by_xpath('/html/body/div[3]/div[2]/div[1]/div[3]/div[1]/div/div/form/ul/li[2]/input').send_keys('')
 
 pressLogin = browser.find_element_by_xpath('/html/body/div[3]/div[2]/div[1]/div[3]/div[1]/div/div/form/ul/li[3]/input').click()
 
